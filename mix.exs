@@ -10,14 +10,13 @@ defmodule PostgrexPubsubMultiTenant.MixProject do
       elixir: "~> 1.10",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
-      source_url:   "https://github.com/augustwenty/postgrex_pubsub_multi_tenant",
+      source_url: "https://github.com/augustwenty/postgrex_pubsub_multi_tenant",
       homepage_url: "https://github.com/augustwenty/postgrex_pubsub_multi_tenant",
-
       package: [
         maintainers: ["DJ Daugherty"],
         licenses: ["MIT"],
         links: %{"GitHub" => "https://github.com/augustwenty/postgrex_pubsub_multi_tenant"}
-      ],
+      ]
     ]
   end
 
@@ -33,8 +32,8 @@ defmodule PostgrexPubsubMultiTenant.MixProject do
     [
       {:ex_doc, ">= 0.0.0", only: :dev, runtime: false},
       {:jason, "~> 1.0"},
-      {:postgrex, "~> 0.15.3"},
-      {:ecto_sql, "~> 3.0"}
+      {:postgrex, "~> 0.16.2"},
+      {:ecto_sql, "~> 3.7.2"}
     ]
   end
 end
